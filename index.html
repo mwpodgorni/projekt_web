@@ -1,78 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Project Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-  
-      <nav id="navbar navbar-expand-md">
+  <body>
+    <div class="container-fluid p-0" id="wrapper">
+      <img src="./assets/laptop.jpg" class="img-fluid bg-image" alt="..." />
+      <nav class="navbar navbar-expand-md p-3">
         <div class="container-fluid">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img
+            src="/assets/play-solid.svg"
+            style="transform: rotate(90deg)"
+            alt="Bootstrap"
+            width="30"
+            height="24"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#home" data-target="#home">HOME</a>
+                <a class="nav-link active" aria-current="page" href="home"
+                  >HOME
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about" data-target="#about">ABOUT</a>
+                <a class="nav-link" href="about">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#work" data-target="#work">WORK</a>
+                <a class="nav-link" href="#">WORK</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#process" data-target="#process">PROCESS</a>
+                <a class="nav-link" href="#">PROCESS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonials" data-target="#testimonials">TESTIMONIALS</a>
+                <a class="nav-link" href="#">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact" data-target="#contact">CONTACT</a>
+                <a class="nav-link" href="#">TESTIMONIALS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
               </li>
             </ul>
           </div>
-
         </div>
       </nav>
-
-    <section id="home">
-      <h2>HOME</h2>
-      <p>This is the relevant section.</p>
-    </section>
-    <section id="about">
-      <div class="row">
-        <div class="col text-center">
-          <h2>About Us</h2>
-          <p>Divide have dont man wherein air fourth. Own itself make have night wont make. A you under Seed appear which good give. Own give air...</p>
-          <img src="..." class="img-fluid" alt="...">
+      <!-- HOME -->
+      <div class="container-fluid" id="home">
+        <div class="row my-5 justify-content-end">
+          <div class="col-6 my-5">
+            <h1>We Design and Develop</h1>
+            <p>
+              We are a new design studio based in USA. We have over 20 years of
+              combines experience, and know a thing or two about designing
+              websites and mobile apps.
+            </p>
+            <button type="button" class="btn btn-info">CONTACT US</button>
+          </div>
         </div>
       </div>
-    </section>
-    <section id="work">
-      <h2>WORK</h2>
-      <p>This is the relevant section.</p>
-    </section>
-    <section id="process">
-      <h2>PROCESS</h2>
-      <p>This is the relevant section.</p>
-    </section>
-    <section id="testimonials">
-      <h2>TESTIMONIALS</h2>
-      <p>This is the relevant section.</p>
-    </section>
-    <section id="contact">
-      <h2>CONTACT</h2>
-      <p>This is the relevant section.</p>
-    </section>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+      <div class="container-fluid" id="about">
+        <div class="row justify-content-center">
+          <div class="col-8 mt-5 text-center">
+            <h2>About Us</h2>
+            <p>
+              We are a new design studio based in USA. We have over 20 years of
+              combines experience, and know a thing or two about designing
+              websites and mobile apps.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="skills">
+        <img src="./assets/pencil.png" class="img-fluid bg-image" alt="..." />
+        <div class="row">
+          <div class="col-6 my-5 pt-5">
+            <h2 class="py-4">Professional Skills</h2>
+            <div class="py-3">
+              <h5>UI/UX DESIGN 75%</h5>
+              <div class="progress" role="progressbar">
+                <div class="progress-bar bg-info" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="py-3">
+              <h5 class="">UI/UX DESIGN 90%</h5>
+              <div class="progress" role="progressbar">
+                <div class="progress-bar bg-info" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="py-3">
+              <h5>UI/UX DESIGN 65%</h5>
+              <div class="progress" role="progressbar">
+                <div class="progress-bar bg-info" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-5" style="background-color: #10c9c3; color: white">
+        <div class="col">
+          <div class="row">
+            <div class="col-auto">
+              <img
+                src="./assets/suitcase-solid.svg"
+                class="img-fluid"
+                width="50"
+              />
+            </div>
+            <div class="col p-0">548<br />PROJECTS COMPLETED</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col-auto">
+              <img
+                src="./assets/clock-regular.svg"
+                class="img-fluid"
+                width="50"
+              />
+            </div>
+            <div class="col p-0">1465<br />WORKING HOURS</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row">
+            <div class="col-auto">
+              <img
+                src="./assets/star-regular.svg"
+                class="img-fluid"
+                width="50"
+              />
+            </div>
+            <div class="col p-0">612<br />POSITIVE FEEDBACKS</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col-auto">
+              <img
+                src="./assets/heart-regular.svg"
+                class="img-fluid"
+                width="50"
+              />
+            </div>
+            <div class="col p-0">735<br />HAPPY CLIENTS</div>
+          </div>
+        </div>
+      </div>
+      <!-- pictures -->
+      <div class="row">
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+        <div class="col">
+          <img src="./assets/heart-regular.svg" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center bg-light text-muted font-weight-bolder">
+          <p class="my-4"><strong>LOAD MORE WORK</strong></p>
+        </div>
+      </div>
+      <!-- process -->
+      <div id="process" class="row mt-5 pt-5 justify-content-center">
+        <div class="col-8 mt-5 text-center">
+          <h2>Our Work Process</h2>
+          <p>
+            Was years it seasons was there form he in in them together over
+            that, third sixth gathered female creeping bearing behold years.
+          </p>
+        </div>
+      </div>
+      <div class="row" style="background-color: #10c9c3; color: white">
+        <div class="col text-center p-5">
+          <h5 class="px-5">
+            "Outstanding job nad exceeded all expectation. It was a pleasure to
+            work with them on a sizable first project and am looking forward to
+            start the next one asap."
+          </h5>
+          <p><em> MICHAEL HOPKINS </em></p>
+          <p><strong>...</strong></p>
+        </div>
+      </div>
+      <div class="row bg-light px-5">
+        <div class="col p-5">
+          <div class="row mb-3">
+            <div class="col">
+              <input placeholder="Your Name" class="form-control" />
+            </div>
+            <div class="col">
+              <input placeholder="Your Email" class="form-control" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <input placeholder="Your Title" class="form-control" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <button type="button" class="btn btn-info p-3">
+                SEND MESSAGE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-5 bg-black text-light">
+        <div class="col">
+          <h6>Piroll Design, Inc</h6>
+          2017 Piroll. All right reserved. Designed by robiruk.
+        </div>
+        <div class="col">
+          hello@piralltheme.com<br />
+          +44 987 065 908
+        </div>
+        <div class="col">
+          Projects<br />
+          About<br />
+          Services<br />
+          Career<br />
+        </div>
+        <div class="col">
+          News<br />
+          Events<br />
+          Contact<br />
+          Legals<br />
+        </div>
+        <div class="col">
+          Facebook<br />
+          Twitter<br />
+          Instagram<br />
+          Dribble<br />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

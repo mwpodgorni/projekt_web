@@ -1,11 +1,14 @@
 body{
-    background-color: brown;
+    overflow-x: hidden;
 }
 
-.nav_bar{
-    background-color: yellowgreen;
+.bg-image{
+    position: absolute;
+    z-index: -1;
+    left:0;
+    right:0
 }
-
-section{
-    height: 1500px;
+#about, #process{
+    padding: 150px 0;
 }
+/* 10C9C3 */
