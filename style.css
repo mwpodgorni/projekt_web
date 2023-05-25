@@ -11,4 +11,15 @@ body{
 #about, #process{
     padding: 150px 0;
 }
+#wrapper{
+    background-image: url('./assets/laptop.jpg');
+    background-size: cover;
+    height: 500px;
+}
+#skills{
+    background-image: url('./assets/pencil.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* 10C9C3 */
